@@ -57,7 +57,7 @@ const closeCartButton = document.querySelector(".modal__close-button");
 
 // BUG: The cart button does not open the modal
 cartButton.addEventListener("click", function () {
-  cartModal.classList.add(".modal_is-opened");
+  cartModal.classList.add("modal_is-opened");
 });
 
 closeCartButton.addEventListener("click", function () {
