@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Practice</title>
+    <link rel="stylesheet" href="blocks/header.css" />
+    <link rel="stylesheet" href="blocks/products.css" />
+    <link rel="stylesheet" href="blocks/form.css" />
+    <link rel="stylesheet" href="blocks/modal.css" />
+    <link rel="stylesheet" href="blocks/card.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">My Awesome Store</h1>
+      <button class="header__cart-button">Cart</button>
+    </header>
+
+    <main class="products"></main>
+
+    <section class="form-section">
+      <h2 class="form-section__title">Add New Product</h2>
+      <form class="form">
+        <input
+          type="text"
+          name="name"
+          class="form__input"
+          placeholder="Product Name"
+        />
+        <input
+          type="text"
+          name="image"
+          class="form__input"
+          placeholder="Image URL"
+        />
+        <input
+          type="number"
+          name="price"
+          class="form__input"
+          placeholder="Price"
+        />
+        <button type="submit" class="form__button">Add Product</button>
+      </form>
+    </section>
+
+    <div class="modal">
+      <div class="modal__container">
+        <h2 class="modal__title">Shopping Cart</h2>
+        <ul class="modal__cart-items"></ul>
+        <button class="modal__close-button">Close</button>
+      </div>
+    </div>
+
+    <template id="card-template">
+      <div class="card">
+        <img src="" alt="" class="card__image" />
+        <h3 class="card__title"></h3>
+        <p class="card__price"></p>
+        <button class="card__add-to-cart-button">Add to Cart</button>
+        <button class="card__delete-button">Delete</button>
+      </div>
+    </template>
+
+    <script src="pages/index.js"></script>
+  </body>
+</html>
