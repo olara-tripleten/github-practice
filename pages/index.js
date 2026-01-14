@@ -42,6 +42,7 @@ document.querySelector(".form").addEventListener("submit", function (evt) {
   const newProduct = { name, image, price };
   initialProducts.push(newProduct);
   productContainer.prepend(createCard(newProduct));
+  evt.target.reset();
 });
 
 // BUG: Deleting a product only removes it from the DOM, not from the initialProducts array
